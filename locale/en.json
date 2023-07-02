@@ -1,0 +1,23 @@
+{
+  "hero_hey": "Hey!",
+  "hero_title_first": "I`am",
+  "hero_title_second": "Kiinse",
+  "hero_spell": "I`m on the same wavelength with technology.",
+  "hero_follow": "Follow me:",
+  "hero_email": "Email Me",
+  "hero_typer1": "Kotlin developer",
+  "hero_typer2": "Java developer",
+  "hero_typer3": "Backend developer",
+  "hero_typer4": "Software engineer",
+  "content_projects": "Recent Projects",
+  "content_details": "Details",
+  "content_prew": "Preview",
+  "content_more": "View more",
+  "content_techs": "Tools & Languages",
+  "page_projects": "Projects",
+  "nav_home": "Home",
+  "nav_projects": "Projects",
+  "announcements": {
+    "army": "I am in the army (compulsory military service) until July 6, 2024"
+  }
+}

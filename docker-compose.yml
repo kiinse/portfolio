@@ -1,0 +1,7 @@
+services:
+  front:
+    build: .
+    container_name: portfolio
+    image: portfolio:latest
+    ports:
+      - "3000:3000"

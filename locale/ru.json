@@ -1,0 +1,23 @@
+{
+  "hero_hey": "Привет!",
+  "hero_title_first": "I`am",
+  "hero_title_second": "Kiinse",
+  "hero_spell": "Я на одной волне с технологиями.",
+  "hero_follow": "Подписаться на меня:",
+  "hero_email": "Написать мне",
+  "hero_typer1": "Kotlin разработчик",
+  "hero_typer2": "Java разработчик",
+  "hero_typer3": "Backend разработчик",
+  "hero_typer4": "Software engineer",
+  "content_projects": "Недавние проекты",
+  "content_details": "Детали",
+  "content_prew": "Увидеть",
+  "content_more": "Узнать больше",
+  "content_techs": "Инструменты и языки",
+  "page_projects": "Проекты",
+  "nav_home": "Главная",
+  "nav_projects": "Проекты",
+  "announcements": {
+    "army": "Нахожусь в армии до 6 июля 2024 года"
+  }
+}
