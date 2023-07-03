@@ -2,9 +2,8 @@
   <ClientOnly>
     <b-container>
       <div
-          style="margin: 5%; min-height: 100vh"
-          class="all-projects"
-      >
+          style="min-height: 100vh; margin-bottom: 70px"
+          class="all-projects">
         <div class="projects__header">
           <h1>{{ $t('page_projects') }}</h1>
         </div>

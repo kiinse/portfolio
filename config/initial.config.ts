@@ -17,6 +17,8 @@ export default {
         github_button: 'outline-warning'
     },
     announcements: {
-        show: true
+        show: true,
+        mobileSpeed: 6,
+        desktopSpeed: 8
     }
 }

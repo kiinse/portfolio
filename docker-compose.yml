@@ -4,7 +4,7 @@ services:
     container_name: portfolio
     image: portfolio:latest
     volumes:
-    	- './config:/nuxt/config'
-    	- './locale:/nuxt/locale'
+        - './config:/nuxt/config'
+        - './locale:/nuxt/locale'
     ports:
       - "3000:3000"

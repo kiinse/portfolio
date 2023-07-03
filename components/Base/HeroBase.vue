@@ -1,6 +1,6 @@
 <template>
   <ClientOnly>
-    <div id="hero">
+    <div id="hero" class="wrapper">
       <b-container>
         <div class="hero">
           <b-row>
@@ -92,6 +92,15 @@ export default {
 <style scoped lang="scss">
 @use '@/assets/style/scss/mixins.scss';
 @import '@/assets/style/scss/variables.scss';
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 .hero {
   margin: 5%;
   &__content {
@@ -142,6 +151,8 @@ export default {
     }
   }
   &__image {
+    text-align: center;
+    align-items: center;
     img {
       border-radius: 25%;
       margin-top: -20%;
@@ -161,6 +172,7 @@ export default {
   }
   @media screen and (max-width: $screen-sm) {
     .hero__image {
+      align-items: center;
       display: none;
     }
     .hero__mobile__image {

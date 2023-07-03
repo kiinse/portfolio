@@ -21,11 +21,11 @@ const { isMobile, isDesktop } = useDevice();
 
 onMounted(() => {
   if (isDesktop) {
-    duration.value = 8;
+    duration.value = announcementsConfig.desktopSpeed;
     isLoaded.value = true;
   }
   if (isMobile) {
-    duration.value = 6;
+    duration.value = announcementsConfig.mobileSpeed;
     isLoaded.value = true;
   }
 });
@@ -38,7 +38,7 @@ onMounted(() => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 45px;
+  height: 5%;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -46,12 +46,18 @@ onMounted(() => {
   background: -webkit-linear-gradient(0deg, rgb(254, 70, 3) 19%, rgb(237, 2, 254) 100%);
 
   .announcements__text {
-    padding-left: 100px;
+    padding-left: 130px;
     font-weight: bold;
+    font-size: 105%;
+
+    @media screen and (max-width: $screen-sm) {
+      padding-left: 100px;
+    }
   }
 
   @media screen and (max-width: $screen-sm) {
-    height: 50px;
+    height: 8%;
+    font-size: 110%;
   }
 }
 </style>

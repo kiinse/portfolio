@@ -86,6 +86,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 30px 7%;
+
 .nav__brand {
   width: 60px;
 a {
