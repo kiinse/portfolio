@@ -1,20 +1,19 @@
-export const toolsConfig: ({tool: string, bg?: string})[] = [
-    {
-        tool: 'kotlin'
-    },
-    {
-        tool: 'java'
-    },
-    {
-        tool: 'spring'
-    },
-    {
-        tool: 'apache'
-    },
-    {
-        tool: 'mongodb'
-    },
-    {
-        tool: 'postgresql'
-    }
-]
+export default {
+    tools: [
+        "kotlin",
+        "java",
+        "micronaut",
+        "spigotmc",
+        "android",
+        "mysql",
+        "bcrypt",
+        "toml",
+        "yaml",
+        "junit",
+        "mongodb",
+        "postgresql",
+        "reddis",
+        "encryption",
+        "proguard"
+    ]
+}

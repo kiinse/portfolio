@@ -4,13 +4,13 @@ export default {
     },
     socialLinks: [
         {
+            icon: 'github',
+            url: 'https://github.com/kiinse'
+        },
+        {
             icon: 'linkedin',
             url: 'https://www.linkedin.com/in/kiinse'
         },
-        {
-            icon: 'instagram',
-            url: 'https://www.instagram.com/kiinse.dev'
-        }
     ],
     hero_buttons: {
         email_button: 'warning',

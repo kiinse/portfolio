@@ -18,9 +18,13 @@
           <b-card-footer>
             <b-row class="project-card__links">
               <b-col class="text-center">
-                <a v-on:click="showModal()">
-                  <icons icon="fab fa-readme"/>
-                  &nbsp;{{$t('content_details')}}
+                <a
+                    :href="gitLink"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                  <icons icon="fab fa-github"/>
+                  {{$t('content_details')}}
                 </a>
               </b-col>
               <b-col class="text-center">
@@ -58,7 +62,7 @@ export default {
     imageLink: {
       type: String
     },
-    readmeLink: {
+    gitLink: {
       type: String
     },
     liveLink: {
@@ -79,14 +83,6 @@ export default {
     getImageUrl(path) {
       return new URL(`../../images/`+path, import.meta.url).href
     },
-    showModal() {
-      this.isActive = !this.isActive
-      console.log(this.isActive)
-    },
-    async getLink(link) {
-      const { data } = await useAsyncData('home', () => queryContent(link).findOne())
-      return data;
-    }
   }
 }
 </script>

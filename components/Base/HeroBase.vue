@@ -32,6 +32,13 @@
                   </div>
                 </h2>
                 <p>{{ $t('hero_spell') }}</p>
+                <div class="stack__background">
+                  <Vue3Marquee pause-on-hover clone duration="120">
+                    <div className="stack__text" v-for="tool in tools">
+                      {{tool}}
+                    </div>
+                  </Vue3Marquee>
+                </div>
                 <h6 class="hero__content__social">
                   {{ $t('hero_follow') }}&nbsp;
                   <span class="hero__content__social-icons">
@@ -48,9 +55,9 @@
                     </b-button>
                   </a>
                   &nbsp;
-                  <a href='https://github.com/kiinse' target="_blank" rel="noopener noreferrer" class="hero__content__main-btns-outline">
+                  <a href='https://discord.com/users/kiinse' target="_blank" rel="noopener noreferrer" class="hero__content__main-btns-outline">
                     <b-button :variant="hero_buttons_conf.github_button" size="lg">
-                      <icons icon="fa-brands fa-github" class="main-btn"/>
+                      <icons icon="fa-brands fa-discord" class="main-btn"/>
                     </b-button>
                   </a>
                 </div>
@@ -74,16 +81,20 @@
 <script>
 import TyperUtil from "~/components/Utils/TyperUtil.vue";
 import initialConfig from "~/config/initial.config";
+import toolsConfig from "~/config/tools.config";
+import {Vue3Marquee} from "vue3-marquee";
 export default {
   name: "HeroBase",
   components: {
+    Vue3Marquee,
     TyperUtil
   },
   data: function () {
     return {
       hero_avatar: initialConfig.hero.avatar_url,
       hero_socialLinks: initialConfig.socialLinks,
-      hero_buttons_conf: initialConfig.hero_buttons
+      hero_buttons_conf: initialConfig.hero_buttons,
+      tools: toolsConfig.tools
     }
   }
 }
@@ -99,6 +110,35 @@ export default {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+.stack {
+  text-align: center;
+  align-items: center;
+
+  &__background {
+    max-width: 300px;
+    margin-bottom: 3%;
+    border-radius: 40px;
+    background: -webkit-linear-gradient(0deg, rgb(227, 160, 16) 19%, rgb(204, 218, 1) 100%);
+
+    @media screen and (max-width: $screen-sm) {
+      max-width: 400px;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+  }
+
+  &__text {
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 105%;
+    color: #1c1c1c;
+
+    @media screen and (max-width: $screen-sm) {
+      padding-left: 30px;
+    }
+  }
 }
 
 .hero {

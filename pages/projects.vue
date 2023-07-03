@@ -9,7 +9,7 @@
         </div>
         <div class="projects__container">
           <b-row>
-            <b-col class="mt-5" sm="6" md="6" v-for="item in items" :key="item.title">
+            <b-col class="mt-5" sm="4" md="4" v-for="item in items" :key="item.title">
               <ProjectCard
                   v-bind:title="item.title"
                   :image-link="item.imageLink"
