@@ -1,7 +1,7 @@
 <template>
-  <ClientOnly>
+  <section>
     <HeroBase/>
-  </ClientOnly>
+  </section>
 </template>
 
 <script>
