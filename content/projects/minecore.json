@@ -1,0 +1,16 @@
+{
+  "title": "MineCore",
+  "imageLink": "minecore.webp",
+  "tech": [
+    {
+      "tooltip": "Kotlin",
+      "icon": "fa-brands fa-java"
+    },
+    {
+      "tooltip": "Minecraft",
+      "icon": "fa-solid fa-gamepad"
+    }
+  ],
+  "liveLink": "https://github.com/kiinse/minecore",
+  "gitLink": "https://github.com/kiinse/minecore"
+}

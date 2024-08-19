@@ -27,14 +27,26 @@
 
 <script>
 import ProjectCard from "~/components/Projects/ProjectCard.vue";
-import {projectsListConfig} from "~/config/projectsList.config";
+import * as fs from "node:fs";
 
 export default {
   name: "projects",
   components: {ProjectCard},
   data: function () {
+    function getProjects() {
+      try {
+        let jsons = []
+        fs.readdirSync('./content/projects').forEach(file => {
+          jsons.push(JSON.parse(fs.readFileSync(`./content/projects/${file}`, 'utf8')))
+        })
+        return jsons
+      } catch (error) {
+        console.log('Error: ', error)
+        return []
+      }
+    }
     return {
-      items: projectsListConfig
+      items: getProjects()
     }
   }
 }

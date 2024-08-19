@@ -5,7 +5,7 @@
         <ul>
           <li>
             <NuxtLink to="/">
-              {{$t('hero_title_second')}}
+              {{$t(nickname)}}
             </NuxtLink>
           </li>
         </ul>
@@ -42,10 +42,13 @@
 </template>
 
 <script>
+import initialConfig from "~/config/initial.config";
+
 export default {
   name: "NavigationBase",
   data() {
     return {
+      nickname: initialConfig.nickname,
       menuItems: [
         {
           name: 'nav_home',
@@ -92,7 +95,7 @@ nav {
 a {
   text-decoration: none;
   font-size: 5vh;
-  background: -webkit-linear-gradient(0deg, rgb(254, 94, 3) 19%, rgb(252, 148, 2) 35%, rgb(255, 205, 3) 51%, rgb(193, 255, 5) 86%, rgb(219, 254, 2) 100%);
+  background: -webkit-linear-gradient(0deg, rgb(2, 127, 252) 35%, rgb(3, 209, 255) 51%, rgb(5, 209, 255) 86%, rgb(2, 254, 216) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 20px;

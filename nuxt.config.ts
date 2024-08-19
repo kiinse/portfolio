@@ -27,7 +27,7 @@ export default defineNuxtConfig({
                 { hid: 'description', name: 'description', content: '' },
                 { name: 'format-detection', content: 'telephone=no' },
             ],
-            link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://ik.imagekit.io/kiinse/kiinse-profile2.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1673959417964' }],
+            link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://ik.imagekit.io/kiinse/8b283c0366762231-sticker-transformed.webp?updatedAt=1723924643048' }],
         },
     },
 

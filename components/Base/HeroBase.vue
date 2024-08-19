@@ -17,8 +17,8 @@
                 <h6>{{$t('hero_hey')}}</h6>
                 <h1>
                   <span class="hero__content__title">
-                    <span class="hero__content__title-first">{{ $t('hero_title_first') }}</span>&nbsp;
-                    <span class="hero__content__title-second">{{ $t('hero_title_second') }}</span>
+                    <span class="hero__content__title-first">{{ $t('hero_title') }}</span>
+                    <span class="hero__content__title-second">{{$t(nickname)}}</span>
                   </span>
                 </h1>
                 <h2>
@@ -83,6 +83,7 @@ import TyperUtil from "~/components/Utils/TyperUtil.vue";
 import initialConfig from "~/config/initial.config";
 import toolsConfig from "~/config/tools.config";
 import {Vue3Marquee} from "vue3-marquee";
+
 export default {
   name: "HeroBase",
   components: {
@@ -91,6 +92,7 @@ export default {
   },
   data: function () {
     return {
+      nickname: initialConfig.nickname,
       hero_avatar: initialConfig.hero.avatar_url,
       hero_socialLinks: initialConfig.socialLinks,
       hero_buttons_conf: initialConfig.hero_buttons,
@@ -120,7 +122,7 @@ export default {
     max-width: 300px;
     margin-bottom: 3%;
     border-radius: 40px;
-    background: -webkit-linear-gradient(0deg, rgb(227, 160, 16) 19%, rgb(204, 218, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgb(16, 143, 227) 19%, rgb(1, 218, 185) 100%);
 
     @media screen and (max-width: $screen-sm) {
       max-width: 400px;
@@ -146,6 +148,7 @@ export default {
   &__content {
     &__title-second {
       color: $color-primary-1;
+      font-weight: bold;
     }
     .know-more {
       @include mixins.anchor($color-primary-1);
@@ -169,12 +172,16 @@ export default {
     }
     &__main-btns {
       button {
-        color: mixins.$text-color-dark !important;
+        background-color: $color-primary-3 !important;
+        border-color: $color-primary-3 !important;
+        color: #1c1c1c !important;
         margin-top: 5%;
       }
     }
     &__main-btns-outline {
       button {
+        background-color: #1c1c1c !important;
+        border-color: $color-primary-1 !important;
         color: mixins.$text-color-light !important;
         margin-top: 5%;
       }

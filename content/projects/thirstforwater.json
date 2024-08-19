@@ -1,0 +1,16 @@
+{
+  "title": "ThirstForWater",
+  "imageLink": "thirstforwater.webp",
+  "tech": [
+    {
+      "tooltip": "Java",
+      "icon": "fa-brands fa-java"
+    },
+    {
+      "tooltip": "Minecraft",
+      "icon": "fa-solid fa-gamepad"
+    }
+  ],
+  "liveLink": "https://www.spigotmc.org/resources/thirstforwater.105680/",
+  "gitLink": "https://github.com/ZoneZeroDev/ThirstForWater"
+}

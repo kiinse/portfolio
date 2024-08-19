@@ -1,6 +1,7 @@
 export default {
+    nickname: "Kiinse",
     hero: {
-        avatar_url: 'https://ik.imagekit.io/kiinse/kiinse-profile2.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1673959417964'
+        avatar_url: 'https://ik.imagekit.io/kiinse/8b283c0366762231-sticker-transformed.webp?updatedAt=1723924643048'
     },
     socialLinks: [
         {
@@ -17,7 +18,7 @@ export default {
         github_button: 'outline-warning'
     },
     announcements: {
-        show: true,
+        show: false,
         mobileSpeed: 6,
         desktopSpeed: 8
     }

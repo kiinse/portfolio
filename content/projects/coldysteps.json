@@ -1,0 +1,16 @@
+{
+  "title": "ColdySteps",
+  "imageLink": "coldysteps.webp",
+  "tech": [
+    {
+      "tooltip": "Java",
+      "icon": "fa-brands fa-java"
+    },
+    {
+      "tooltip": "Minecraft",
+      "icon": "fa-solid fa-gamepad"
+    }
+  ],
+  "liveLink": "https://www.spigotmc.org/resources/coldysteps.105678/",
+  "gitLink": "https://github.com/ZoneZeroDev/ColdySteps"
+}

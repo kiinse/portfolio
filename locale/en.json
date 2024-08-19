@@ -1,7 +1,6 @@
 {
   "hero_hey": "Hey!",
-  "hero_title_first": "I`am",
-  "hero_title_second": "Kiinse",
+  "hero_title": "I`am ",
   "hero_spell": "I`m on the same wavelength with technology.",
   "hero_follow": "Follow me:",
   "hero_email": "Email Me",
@@ -15,6 +14,7 @@
   "nav_home": "Home",
   "nav_projects": "Projects",
   "announcements": {
-    "army": "I am in the army (compulsory military service) until July 6, 2024"
+    "MysticLands": "MysticLands will release soon!",
+    "MineAuth": "MineAuth 2.0 is available now!"
   }
 }
