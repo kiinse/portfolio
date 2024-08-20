@@ -5,7 +5,7 @@
           style="min-height: 100vh; margin-bottom: 70px"
           class="all-projects">
         <div class="projects__header">
-          <h1>{{ $t('page_projects') }}</h1>
+          <h2 class="header">{{ $t('page_projects') }}</h2>
         </div>
         <div class="projects__container">
           <b-row>
@@ -32,6 +32,18 @@ const { data: items } = await useFetch('/api/getProjectsData')
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+@import '@/assets/style/scss/variables.scss';
+
+.projects__header {
+  text-align: center;
+}
+
+.header {
+  color: $color-primary-9;
+  font-weight: bold;
+}
+
 
 </style>

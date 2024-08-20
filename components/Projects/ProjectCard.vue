@@ -2,7 +2,8 @@
   <ClientOnly>
     <div class="project-card">
       <b-container>
-        <b-card class="bg-dark" :img-src="getImageUrl(imageLink)">
+        <b-card class="bg-dark">
+          <NuxtImg class ="card-image" :src="getImageUrl(imageLink)" height="200" />
           <b-card-body>
             <b-row>
               <b-col>
@@ -24,7 +25,7 @@
                     rel="noopener noreferrer"
                 >
                   <icons icon="fab fa-github"/>
-                  {{$t('content_details')}}
+                  Github
                 </a>
               </b-col>
               <b-col class="text-center">
@@ -94,15 +95,17 @@ export default {
   .b-card {
     box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   }
-  .card-img {
-    width: 75%;
-    height: auto;
-  }
   .b-card-title {
     white-space: nowrap;
   }
   .card-title {
-    color: white;
+    color: $color-primary-9;
+  }
+  .card-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
   }
   &__image {
     .placeholder {
@@ -125,7 +128,7 @@ export default {
       justify-content: space-evenly;
       padding: 0.5rem 0.2rem;
       border-radius: $border-radius-2;
-      background: $color-primary-8;
+      background: $color-primary-2;
       svg {
         width: 10%;
         height: auto;

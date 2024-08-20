@@ -58,6 +58,11 @@ export default {
           name: 'nav_projects',
           path: '/projects'
         }
+        ,
+        {
+          name: 'nav_blog',
+          path: '/blog'
+        }
       ],
       stateParam: {
         isActive: false
