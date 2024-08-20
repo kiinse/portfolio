@@ -17,7 +17,7 @@ export default defineNuxtConfig({
 
     app: {
         head: {
-            title: '👑Kiinse',
+            title: 'Kiinse',
             htmlAttrs: {
                 lang: 'en',
             },

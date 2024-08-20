@@ -49,14 +49,14 @@
                 </h6>
                 <div class="hero__content__main-btns">
                   <a href="mailto:me@kiinse.dev">
-                    <b-button :variant="hero_buttons_conf.email_button" size="lg">
+                    <b-button :variant="'info'" size="lg">
                       <icons icon="fas fa-envelope" class="main-btn" />
                       {{ $t('hero_email') }}
                     </b-button>
                   </a>
                   &nbsp;
                   <a href='https://discord.com/users/kiinse' target="_blank" rel="noopener noreferrer" class="hero__content__main-btns-outline">
-                    <b-button :variant="hero_buttons_conf.github_button" size="lg">
+                    <b-button :variant="'outline-info'" size="lg">
                       <icons icon="fa-brands fa-discord" class="main-btn"/>
                     </b-button>
                   </a>
@@ -172,16 +172,12 @@ export default {
     }
     &__main-btns {
       button {
-        background-color: $color-primary-3 !important;
-        border-color: $color-primary-3 !important;
         color: #1c1c1c !important;
         margin-top: 5%;
       }
     }
     &__main-btns-outline {
       button {
-        background-color: #1c1c1c !important;
-        border-color: $color-primary-1 !important;
         color: mixins.$text-color-light !important;
         margin-top: 5%;
       }

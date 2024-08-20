@@ -13,10 +13,6 @@ export default {
             url: 'https://www.linkedin.com/in/kiinse'
         },
     ],
-    hero_buttons: {
-        email_button: 'warning',
-        github_button: 'outline-warning'
-    },
     announcements: {
         show: false,
         mobileSpeed: 6 as number,
