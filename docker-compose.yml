@@ -6,5 +6,6 @@ services:
     volumes:
         - './config:/nuxt/config'
         - './locale:/nuxt/locale'
+        - './content:/nuxt/content'
     ports:
       - "3000:3000"
