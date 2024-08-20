@@ -21,5 +21,8 @@ export default {
         show: false,
         mobileSpeed: 6 as number,
         desktopSpeed: 8 as number
+    },
+    projects: {
+        dir: '/nuxt/.output/server/content/projects'
     }
 }
