@@ -40,7 +40,7 @@
                   </Vue3Marquee>
                 </div>
                 <h6 class="hero__content__social">
-                  {{ $t('hero_follow') }}&nbsp;
+                  {{$t('hero_follow')}}
                   <span class="hero__content__social-icons">
                     <a :href="link.url" v-for="link in hero_socialLinks" :key="link.icon">
                         <icons :icon="'fa-brands fa-'+link.icon" class="social-icon github" />
@@ -54,7 +54,6 @@
                       {{ $t('hero_email') }}
                     </b-button>
                   </a>
-                  &nbsp;
                   <a href='https://discord.com/users/kiinse' target="_blank" rel="noopener noreferrer" class="hero__content__main-btns-outline">
                     <b-button :variant="'outline-info'" size="lg">
                       <icons icon="fa-brands fa-discord" class="main-btn"/>
@@ -154,7 +153,6 @@ export default {
       @include mixins.anchor($color-primary-1);
     }
     &__social-icons {
-      margin: auto 1%;
       .social-icon {
         font-size: 1.5rem;
         margin: auto 1%;
@@ -180,6 +178,7 @@ export default {
       button {
         color: mixins.$text-color-light !important;
         margin-top: 5%;
+        margin-left: 2%;
       }
     }
     .type-writer {

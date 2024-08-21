@@ -1,6 +1,6 @@
 # Dockerfile
 FROM node:16.15.0-alpine as dep-base
-
+giut
 RUN mkdir -p /nuxt
 WORKDIR /nuxt
 

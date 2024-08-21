@@ -43,7 +43,7 @@ onMounted(() => {
   bottom: 0;
   width: 100%;
   z-index: 50;
-  background: -webkit-linear-gradient(0deg, rgb(254, 70, 3) 19%, rgb(237, 2, 254) 100%);
+  background: -webkit-linear-gradient(0deg, rgb(229, 3, 254) 19%, rgb(153, 2, 254) 100%);
 
   .announcements__text {
     padding-left: 130px;

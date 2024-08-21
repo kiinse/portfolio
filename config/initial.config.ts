@@ -14,7 +14,7 @@ export default {
         },
     ],
     announcements: {
-        show: false,
+        show: true,
         mobileSpeed: 6 as number,
         desktopSpeed: 8 as number
     }

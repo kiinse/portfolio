@@ -13,7 +13,7 @@
               <b-card-text style="white-space: pre-line">
                 {{ formattedBody }}
                 <b-button :variant="'outline-info'" size="sm" @click="showingFullText = !showingFullText">
-                  Read {{ showingFullText ? "Less" : "More" }}
+                  {{ showingFullText ? $t('read_less') : $t('read_more') }}
                 </b-button>
               </b-card-text>
             </b-row>
@@ -69,7 +69,7 @@ export default {
   },
   methods: {
     getDate() {
-      return new Date(this.date).toLocaleDateString("en-EN", options);
+      return new Date(this.date).toLocaleDateString(this.$i18n.locale, options);
     }
   }
 }

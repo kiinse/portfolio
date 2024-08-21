@@ -8,6 +8,8 @@
   "hero_typer2": "Java разработчик",
   "hero_typer3": "Backend разработчик",
   "hero_typer4": "Software engineer",
+  "read_more": "Читать дальше",
+  "read_less": "Скрыть",
   "content_prew": "Увидеть",
   "page_projects": "Проекты",
   "page_blog": "Блог",
@@ -15,7 +17,6 @@
   "nav_projects": "Проекты",
   "nav_blog": "Блог",
   "announcements": {
-    "MysticLands": "MysticLands скоро запустится!",
-    "MineAuth": "MineAuth 2.0 уже доступен!"
+    "Site_reboot": "Сайт скоро будет полностью переписан!"
   }
 }
