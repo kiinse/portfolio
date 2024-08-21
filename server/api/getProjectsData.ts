@@ -6,12 +6,12 @@ export default defineEventHandler(async (event) => {
 
     let jsons = [];
 
-    const dirFiles = await fs.readdir(initialConfig.projects.dir);
+    const dirFiles = await fs.readdir(initialConfig.dirs.projects);
 
     for (const file of dirFiles) {
         jsons.push(
             JSON.parse(
-                await fs.readFile(path.join(initialConfig.projects.dir, `${file}`), 'utf8')
+                await fs.readFile(path.join(initialConfig.dirs.projects, `${file}`), 'utf8')
             )
         )
     }
