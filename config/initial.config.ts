@@ -20,6 +20,6 @@ export default {
     },
     dirs: {
         projects: '/nuxt/.output/server/content/projects',
-        blog: '/nuxt/.output/server/content/dir'
+        blog: '/nuxt/.output/server/content/blog'
     }
 }
